@@ -1,6 +1,7 @@
 package abika.sinau.myunitconverterapp.component.converter
 
 import abika.sinau.myunitconverterapp.data.model.Conversion
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
@@ -30,7 +31,7 @@ fun TopScreen(
         mutableStateOf(null)
     }
 
-    val inputText : MutableState<String> = remember {
+    val inputText: MutableState<String> = remember {
         mutableStateOf("")
     }
 
@@ -40,6 +41,8 @@ fun TopScreen(
     })
 
     selectedConversion.value?.let {
-        InputBlock(conversion = it, inputText = inputText)
+        InputBlock(conversion = it, inputText = inputText, calculate = { input ->
+            Log.i("MYTAG", "User Typed: $input")
+        })
     }
 }
