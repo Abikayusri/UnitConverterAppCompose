@@ -36,8 +36,8 @@ import androidx.compose.ui.unit.sp
 fun InputBlock(
     conversion: Conversion,
     inputText: MutableState<String>,
-    isLandscape: Boolean? = false,
     modifier: Modifier = Modifier,
+    isLandscape: Boolean? = false,
     context: Context = LocalContext.current,
     calculate: (String) -> Unit
 ) {

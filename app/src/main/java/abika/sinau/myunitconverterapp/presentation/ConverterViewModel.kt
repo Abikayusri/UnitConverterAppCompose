@@ -7,15 +7,51 @@ import androidx.lifecycle.ViewModel
 /**
  * @author by Abika Chairul Yusri on 12/22/2022
  */
-class ConverterViewModel: ViewModel() {
+class ConverterViewModel : ViewModel() {
 
     fun getConversions() = listOf(
-        Conversion(1,"Pounds to Kilograms","lbs","kg",0.453592),
-        Conversion(2,"Kilograms to Pounds","kg","lbs",2.20462),
-        Conversion(3,"Yards to Meters","yd","m",0.9144),
-        Conversion(4,"Meters to Yards","m","yd",1.09361),
-        Conversion(5,"Miles to Kilometers","mi","km",1.60934),
-        Conversion(6,"Kilometers to Miles","km","mi",0.621371)
+        Conversion(
+            id = 1,
+            description = "Pounds to Kilograms",
+            convertFrom = "lbs",
+            convertTo = "kg",
+            multiplyBy = 0.453592
+        ),
+        Conversion(
+            id = 2,
+            description = "Kilograms to Pounds",
+            convertFrom = "kg",
+            convertTo = "lbs",
+            multiplyBy = 2.20462
+        ),
+        Conversion(
+            id = 3,
+            description = "Yards to Meters",
+            convertFrom = "yd",
+            convertTo = "m",
+            multiplyBy = 0.9144
+        ),
+        Conversion(
+            id = 4,
+            description = "Meters to Yards",
+            convertFrom = "m",
+            convertTo = "yd",
+            multiplyBy = 1.09361
+        ),
+        Conversion(
+            id = 5,
+            description = "Miles to Kilometers",
+            convertFrom = "mi",
+            convertTo = "km",
+            multiplyBy = 1.60934
+        ),
+        Conversion(
+            id = 6,
+            description = "Kilometers to Miles",
+            convertFrom = "km",
+            convertTo = "mi",
+            multiplyBy = 0.621371
+        )
     )
 
 
