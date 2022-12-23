@@ -27,6 +27,6 @@ fun BaseScreen(
     Column(modifier = modifier.padding(30.dp)) {
         TopScreen(list)
         Spacer(modifier = modifier.height(20.dp))
-        HistoryScreen()
+//        HistoryScreen()
     }
 }
